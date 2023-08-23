@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Product</title>
+    <link rel="stylesheet" href="productstyle.css">
+</head>
+<body>
+    <h2>Add Product</h2>
+    <form action="/add_product" method="POST">
+
+        
+        <label for="product_name">Product Name:</label>
+        <input type="text" id="product_name" name="product_name" required><br>
+
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description" rows="4" cols="50"></textarea><br>
+
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" step="0.01" required><br>
+
+        <input type="submit" value="Add Product">
+    </form>
+</body>
+</html>

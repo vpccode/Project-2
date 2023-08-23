@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="newwelcome.css">
+    <title>Order status result</title>
+</head>
+<body>
+    
+    <div th:each="display:${myreg}">
+        
+        <strong><p th:text="'Order status is  :'+${display.status}"></p></strong>
+        <strong><p th:text="'Your update_date is  :'+${display.update_date}"></p></strong>
+   
+        *****************************************************************************
+      
+        <br>
+    
+        
+    </div>
+
+    
+    
+</body>
+</html>

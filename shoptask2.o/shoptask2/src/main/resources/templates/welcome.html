@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome</title>
+</head>
+<body>
+    <h1>welcome</h1>
+    <div th:each="display:${myreg}">
+        <strong><p th:text="'Your updated name is  :'+${display.username}"></p></strong>
+        <strong><p th:text="'Your update email is   :'+${display.email}"></p></strong>
+        *****************************************************************************
+        <!-- <strong><p th:text="'Your name is  :'+${display.username}"></p></strong> -->
+        <br>
+
+       
+    
+</body>
+</html>

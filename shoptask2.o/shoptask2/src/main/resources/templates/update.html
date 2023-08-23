@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update</title>
+</head>
+<body>
+
+    <h1>welcome</h1>
+    <div th:each="display:${myreg}">
+        <strong><p th:text="'Your name is  :'+${display.username}"></p></strong>
+        <strong><p th:text="'Your name is  :'+${display.email}"></p></strong>
+        *****************************************************************************
+        <!-- <strong><p th:text="'Your name is  :'+${display.username}"></p></strong> -->
+        <br>
+        
+    <form name="update" action="/updateuser" method="put">
+        <h1>Update  Page</h1>
+
+        <!-- <label for="id">id</label><br>
+        <input type="text" id="id" name="id" placeholder="Enter Your id.."><br> -->
+
+        <label for="username">Username</label><br>
+        <input type="text" id="username" name="username" placeholder="Enter Your name.."><br>
+
+        <label for="email">Email</label><br> 
+        <input type="text" id="email" name="email" placeholder="Enter Your Email.."><br>
+
+        
+
+        <label for="password">Address</label><br>
+        <input type="text" id="password" name="password" placeholder="Enter Your Password.."><br>
+
+        <!-- <label for="password">Password</label><br>
+        <input type="password" id="password" name="password" placeholder="Password"><br> <br>  -->
+
+        <input type="submit" placeholder="Submit">
+    </form>
+    
+</body>
+</html>
